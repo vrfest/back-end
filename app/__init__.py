@@ -12,7 +12,7 @@ mongo = PyMongo(app)
 
 @app.route('/')
 def index():
-    online_users = mongo.db.users.find()
+	online_users = mongo.db.users.find()
 	print(online_users)
 
 	return render_template("index.html")
