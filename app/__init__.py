@@ -13,6 +13,34 @@ db = client['heroku_q29ztbtc']
 def index():
 	return app.send_static_file("index.html")
 
+
+# React routes
+@app.route('/homepage')
+def homepage():
+	return app.send_static_file("index.html")
+# React routes
+@app.route('/login')
+def login():
+	return app.send_static_file("index.html")
+# React routes
+@app.route('/signup')
+def signup():
+	return app.send_static_file("index.html")
+# React routes
+@app.route('/dashboard')
+def dashboard():
+	return app.send_static_file("index.html")
+# React routes
+@app.route('/payment')
+def payment():
+	return app.send_static_file("index.html")
+# React routes
+@app.route('/test')
+def test():
+	return app.send_static_file("index.html")
+
+
+
 # @app.route('/tickets/create', methods=['POST'])
 # def buy_ticket():
 #
